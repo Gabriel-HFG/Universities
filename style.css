@@ -9,15 +9,26 @@ body {
 
 header {
   background-color: #510c76;
-  border-bottom: 1px solid #00bcd4;
+  border-bottom: 2px solid purple;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
+  padding-left: 15px;
+  padding-right: 30px;
   margin: 0;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  height: 60px;
 }
 
 .nav-links {
@@ -30,7 +41,7 @@ header {
 .nav-links a {
   text-decoration: none;
   color: white;
-  transition: 0.3s; /*when text is hovered it will take a bit to change color*/
+  transition: 0.3s; /*when text is hovered it will take a bit to change color or when the site is loaded i noticed*/
 }
 
 .logo {
@@ -42,3 +53,163 @@ header {
 }
 
 /*-- ===== HEADER ===== --*/
+
+/*-- ===== HERO section ===== --*/
+.hero {
+  height: 100vh;
+  background-image: url("img/study-background-hero.png");
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blur-box {
+  backdrop-filter: blur(10px);
+  background: #00000066;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.glass-card {
+  backdrop-filter: blur(15px);
+  background: #00000066;
+  width: 80vh;
+  height: 80vh;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.student-img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.features-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-box li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hero-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+/*-- ===== HERO section ===== --*/
+
+/*-- ===== Options ===== --*/
+
+.options {
+  padding-top: 10px;
+  padding-bottom: 100px;
+  background: linear-gradient(#510c76,#a77bc8);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+
+.mini-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.mini-card {
+  background: #ffffff;
+  padding: 20px;
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 5px solid;
+}
+
+.card-top {
+  display: flex;
+  gap: 10px;
+}
+
+.school-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card-info p {
+  margin: 5px 0 0;
+  font-size: 12px;
+}
+
+.card-description {
+  font-size: 13px;
+}
+
+.card-map img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid;
+}
+
+.mini-card {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid
+}
+
+.mini-card-1 {background-image: url("img/EAC.png");}
+.mini-card-2 {background-image: url("img/UACJ.png");}
+.mini-card-3 {background-image: url("img/Wach.jpg");}
+
+.mini-wrapper p, .card-wrapper p {
+  backdrop-filter: blur(1px);
+  background: #00000066;
+  border-radius: 3px;
+  color: white;
+}
+/*-- ===== Options ===== --*/
