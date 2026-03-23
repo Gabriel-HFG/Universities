@@ -105,8 +105,8 @@ header {
 }
 
 .features-box li {
-  margin-bottom: 10px;
-  font-size: 16px;
+  margin-bottom: 38px;
+  font-size: 30px;
 }
 
 .hero-left-content {
@@ -122,10 +122,13 @@ header {
 .options {
   padding-top: 10px;
   padding-bottom: 100px;
-  background: linear-gradient(#510c76,#a77bc8);
+  background: linear-gradient(#a77bc8,#510c76);
   text-align: center;
 }
 
+.options h2, .options h3 {
+  outline-style: solid;
+}
 .section-title {
   font-size: 80px;
   margin-bottom: 40px;
@@ -172,6 +175,11 @@ header {
   gap: 10px;
 }
 
+.card-title {
+  font-size: 30px;
+  margin: 5px;
+}
+
 .school-img {
   width: 150px;
   height: 150px;
@@ -216,6 +224,7 @@ header {
   backdrop-filter: blur(1px);
   background: #00000066;
   border-radius: 3px;
+  padding: 5px;
   color: white;
 }
 /*-- ===== Options ===== --*/
