@@ -78,8 +78,8 @@ header {
   background: #00000066;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 80px;
-  margin-left: 80px;
+  margin-top: 0px;
+  margin-left: 40px;
 }
 
 .glass-card {
@@ -106,13 +106,13 @@ header {
 
 .features-box li {
   margin-bottom: 38px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .hero-left-content {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
 }
 
 /*-- ===== HERO section ===== --*/
@@ -185,6 +185,7 @@ header {
   height: 150px;
   object-fit: cover;
   border-radius: 10px;
+  border: 3px solid;
 }
 
 .card-info h4 {
