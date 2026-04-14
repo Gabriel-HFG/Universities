@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family; Arial, sans-serif;
-     padding-top: 80px;
+    padding-top: 80px;
 }
 
 /*-- ===== HEADER ===== --*/
@@ -196,6 +196,7 @@ header {
 .card-info p {
   margin: 5px 0 0;
   font-size: 12px;
+  text-align: left;
 }
 
 .card-description {
