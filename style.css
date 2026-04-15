@@ -295,3 +295,74 @@ header {
 }
 
 /*-- ===== Footer ===== --*/
+
+/*-- ===== Troll ===== --*/
+
+.troll {
+  background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);
+  font-family: Arial;
+  text-align: center;
+  color: white;
+}
+
+.gameOver {
+  margin: 10px;
+}
+
+#topBar {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+#grid {
+  display: grid;
+  justify-content: center;   /* centers grid horizontally */
+  align-content: center;     /* centers vertically (if needed) */
+  margin: 20px auto;
+  gap: 10px;
+}
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #222;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+}
+
+.cell img {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+
+.active {
+  background: #00d4ff;
+  box-shadow: 0 0 10px #00d4ff;
+}
+
+.active {
+  animation: fadeOut 1s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+#gameOver {
+  display: none;
+  margin-top: 20px;
+}
+
+/*-- ===== Troll ===== --*/

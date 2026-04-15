@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            ScholarPath
-        </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarPath | Whack-It</title>
+    <link href="style2.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo-academia.png">
+</head>
+<body id="top">
 
-        <link href="style.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="img/logo-academia.png"> <!-- "icon" = tells the browser: icon for the website-->
-    </head>
-        <body id="top">
+    <header>
+        <nav class="navbar">
+            <div class="left-side">
+                <img src="img/logo-academia.png" alt="Site Logo" class="nav-logo">
+                <h1 class="logo">ScholarPath</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- ===== HEADER ===== -->
+    <main class="game-wrapper">
+        <section class="troll-section" id="gameArea">
+            <h1 class="game-title">Whack It</h1>
 
-            <header>
-            <nav class="navbar">
-                <div class="left-side">
-                    <img src="img/logo-academia.png" alt="Site Logo" class="nav-logo">
-                    <h1 class="logo">ScholarPath</h1>
+            <div id="topBar">
+                <div class="stat-box">Score: <span id="score">0</span></div>
+                <div class="stat-box">Combo: <span id="comboCounter">0</span></div>
+                <div class="stat-box">Lives: <span id="lives">3</span></div>
+                <div class="stat-box">High: <span id="highScore">0</span></div>
+            </div>
+
+            <div class="upload-container">
+                <label for="upload">Upload Custom Mole:</label>
+                <input type="file" id="upload" accept="image/*">
+            </div>
+
+            <div id="grid"></div>
+
+            <div id="gameOverlay" class="overlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">Are you ready?</h2>
+                    <p id="overlayStats"></p>
+                    <button id="startBtn" onclick="startGame()">Start Game</button>
                 </div>
+                <h1 id="overlayTitle">WHACK-A-CALAHORRA</h1>
+    <div id="overlayStats"></div>
+    <div class="difficulty-options">
+        <button onclick="startGame('easy')">EASY</button>
+        <button onclick="startGame('medium')">NORMAL</button>
+        <button onclick="startGame('hard')">HARD</button>
+    </div>
+            </div>
+        </section>
+    </main>
 
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#top">Return to top</a></li>
-                 </ul>
+    <footer class="footer">
+        <p>© 2026 Scholar Path</p>
+        <p>Created by Gabriel Fimbres, Noemi Reyes, Eduardo Leon</p>
+    </footer>
 
-            </nav>
-            </header>
-
-<!-- ===== Header ===== -->
-
-<!-- ===== Services ===== -->
-
-<section class="services">
-
-</section>
-
-<!-- ===== Services ===== -->
-
-<!-- ===== Footer ===== -->
-
-<footer class="footer">
-  <p>© 2026 Scholar Path</p>
-  <p>Explore more at the Home, About, Services and Contact pages</p>
-  <p>Created by Gabriel Fimbres, Noemi Reyes, Eduardo Leon</p>
-</footer>
-<!-- ===== Footer ===== -->
-        </body>
+    <script src="script.js"></script>
+</body>
+</html>
